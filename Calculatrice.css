@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+ 
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculatrice {
+    background-color: transparent;
+    border: none;
+}
+
+.cont {
+    display: flex;
+    gap: 10px;
+}
+
+.calcule-cont {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(171, 171, 171);
+    border: solid black 3px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.test {
+    background-color: bisque;
+}
+.screen {
+    height: 70px;
+    width: 215px;
+    display: flex;
+    flex-grow: 0;
+    align-items: end;
+    justify-content: right;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(48, 48, 48, 0.6);
+}
+
+
+.values {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.buttons-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    grid-template-areas: 
+        "clear clear division effacer "
+        "n7 n8 n9 substraction"
+        "n4 n5 n6 addition"
+        "n1 n2 n3 egale"
+        "point zero multiplication egale";
+}
+
+.buttons {
+    background-color: rgb(255, 183, 0);
+    border: solid black 2px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.buttons:hover {
+    scale: .98;
+    background-color: rgb(244, 223, 104);
+    border-radius: 6px;
+}
+
+.buttons:active {
+    scale: .9;
+    background-color: rgb(255, 240, 158);
+    border-radius: 6px;
+}
+
+.eff {
+    background-color: tomato;
+}
+
+.egale {
+    background-color: lightgreen;
+}
+
+.operations {
+    background-color: lightblue;
+}
+
